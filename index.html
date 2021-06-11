@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tilldlab</title>
+		<!-- css stylesheet  -->
+		<link rel="stylesheet" href="css/style.css" />
+		<!-- fontawesome -->
+		<link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css" />
+		<link
+			rel="stylesheet"
+			href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<body>
+		<div class="name-contact">
+			<span class="name">Pro Cleaners</span>
+			<span class="contact">Phone: 1-800-222-3030</span>
+		</div>
+		<div class="section-one">
+			<div class="container section-one--flex">
+				<div class="section-one__intro">
+					<h1>Vancouver's Best Home Cleaners</h1>
+					<p>
+						Pro Cleaning is Vancouver's best cleaning service. For the quality
+						maid service Vancouver relies on, book one of our experienced,
+						background-checked professionals to have your home clean in no time.
+					</p>
+				</div>
+				<div class="section-one__form">
+					<div class="form-container">
+						<div class="form-text">
+							<h3>Request Info & Booking</h3>
+							<p>Fill this form and we'll contact you as soon as we can.</p>
+						</div>
+						<form onsubmit="return validateField()">
+							<input
+								type="text"
+								name="name"
+								id="name"
+								placeholder="Your Name"
+								required
+							/>
+							<input
+								type="email"
+								name="email"
+								id="email"
+								placeholder="Your Email"
+								required
+							/>
+							<input
+								type="tel"
+								name="telephone"
+								id="telephone"
+								placeholder="Your Phone"
+							/>
+							<input
+								type="submit"
+								value="Request Info & Booking"
+								class="submit"
+							/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section-two">
+			<div class="container section-two--flex">
+				<div class="section-two__box1 box">
+					<i class="fas fa-user fa-3x"></i>
+					<h3>Trusted Professionals</h3>
+					<p>
+						Our professionals are experienced, friendly, and background-checked
+					</p>
+				</div>
+				<div class="section-two__box2 box">
+					<i class="far fa-calendar-alt fa-3x"></i>
+					<h3>Availability Everyday</h3>
+					<p>
+						We're available to serve you 7 days per weeek. We'll work around
+						your schedule.
+					</p>
+				</div>
+				<div class="section-two__box3 box">
+					<i class="fas fa-dollar-sign fa-3x"></i>
+					<h3>100% Money-Bank Guarentee</h3>
+					<p>
+						If you're not satisfied, we'll refund all of your money. It's as
+						simple as that
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="section-three">
+			<div class="container">
+				<h3>What our Client Say</h3>
+				<div class="section-three--flex">
+					<div class="section-three__img">
+						<div class="avatar-container">
+							<div class="avatar">
+								<img
+									src="./images/team-image1.jpg"
+									alt="team-image1"
+									class="avatar-image"
+								/>
+							</div>
+							<div class="avatar-name">
+								<p>Paulo Parra</p>
+							</div>
+						</div>
+						<p>
+							The team was fast and friendly-honestly my house hasn't been this
+							clean in years!
+						</p>
+						<div class="rating">
+							<ul class="stars">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+					<div class="section-three__img">
+						<div class="avatar-container">
+							<div class="avatar">
+								<img
+									src="./images/team-image2.jpg"
+									alt="team-image2"
+									class="avatar-image"
+								/>
+							</div>
+							<div class="avatar-name">
+								<p>Ana Carolina</p>
+							</div>
+						</div>
+						<p>
+							It feels so great walking in to a fresh, clean apartment everyday.
+							These guys make my place spotless!
+						</p>
+						<div class="rating">
+							<ul class="stars">
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<p>Copyright. All Rights Reserved.</p>
+			</div>
+		</footer>
+	</body>
+	<script src="main.js"></script>
+</html>
