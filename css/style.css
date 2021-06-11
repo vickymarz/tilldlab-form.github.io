@@ -1,1 +1,220 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+body {
+  background: white;
+  width: 100%;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.name-contact {
+  width: 80%;
+  margin: auto;
+  margin: 50px auto 10px auto;
+}
+.name-contact .contact {
+  float: right;
+}
+
+.section-one {
+  background: url(../images/home-bg.jpg) no-repeat;
+  background-size: 100% 100%;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+}
+.section-one .section-one--flex {
+  display: flex;
+  flex-direction: column;
+}
+.section-one .section-one__intro {
+  color: white;
+  margin-bottom: 25px;
+}
+.section-one .section-one__intro h1 {
+  padding: 15px 0;
+  font-size: 2.5rem;
+}
+.section-one .section-one__intro p {
+  font-weight: 600;
+  line-height: 1.5;
+}
+.section-one .section-one__form {
+  background-color: #00000091;
+  margin-bottom: 40px;
+  max-width: 375px;
+  margin: auto;
+}
+.section-one .section-one__form .form-container {
+  width: 90%;
+  max-width: 375px;
+  margin: auto;
+  padding: 10px 0;
+}
+.section-one .section-one__form .form-container .form-text {
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  line-height: 2;
+}
+.section-one .section-one__form .form-container .form-text h3 {
+  font-size: 2rem;
+}
+.section-one .section-one__form .form-container .form-text p {
+  font-weight: 600;
+}
+.section-one .section-one__form .form-container input {
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 12px;
+  border-radius: 5px;
+}
+.section-one .section-one__form .form-container .submit {
+  background-color: #0cdd0c;
+  color: white;
+  font-weight: bolder;
+}
+
+.section-two {
+  padding: 20px;
+}
+.section-two .section-two--flex {
+  display: flex;
+  flex-direction: column;
+}
+.section-two .box {
+  margin: 15px auto;
+  text-align: center;
+}
+.section-two .box h3 {
+  padding-bottom: 10px;
+}
+.section-two .box p {
+  line-height: 1.5;
+}
+.section-two .box i {
+  margin-bottom: 20px;
+  padding: 20px;
+  color: cyan;
+  background-color: #cec3c319;
+  border-radius: 35px;
+}
+
+.section-three {
+  background-color: #cec3c33c;
+  text-align: center;
+}
+.section-three h3 {
+  padding: 15px;
+}
+.section-three p {
+  font-style: italic;
+}
+.section-three .section-three--flex {
+  display: flex;
+  flex-direction: column;
+}
+.section-three .section-three--flex .section-three__img {
+  padding-bottom: 20px;
+}
+.section-three .section-three--flex .section-three__img .avatar-container {
+  margin-bottom: 20px;
+}
+.section-three .section-three--flex .section-three__img .avatar-container .avatar {
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  display: flex;
+}
+.section-three .section-three--flex .section-three__img .avatar-container .avatar-image {
+  width: 50px;
+  margin: auto;
+  border-radius: 3rem;
+  border: 3px solid white;
+}
+.section-three .section-three--flex .section-three__img .stars > li {
+  content: "";
+  display: flex;
+  background: url(../images/icon-star.svg) space;
+  max-width: 85px;
+  height: 25px;
+  margin: 0.5rem auto 0 auto;
+}
+
+footer {
+  background-color: #050505aa;
+  color: white;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-one .section-one--flex {
+    flex-direction: row;
+    padding: 50px;
+  }
+  .section-one .section-one__intro {
+    flex-basis: 40%;
+    margin-right: 50px;
+    margin-top: 30px;
+  }
+  .section-one .section-one__intro h1 {
+    font-size: 3rem;
+  }
+  .section-one .section-one__intro p {
+    font-size: 1.1rem;
+  }
+  .section-one .section-one__form {
+    flex-basis: 60%;
+  }
+
+  .section-two .section-two--flex {
+    flex-direction: row;
+  }
+  .section-two .box {
+    flex-basis: 50%;
+    margin-right: 50px;
+  }
+  .section-two .box p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .section-three p {
+    width: 50%;
+    margin: auto;
+  }
+  .section-three .section-three--flex {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-three .section-three--flex .section-three__img {
+    flex-basis: 50%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
